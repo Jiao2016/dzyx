@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>打字游戏</title>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript"src="js/animate.js"></script>
+	<script type="text/javascript"src="js/zijidaziyouxi.js"></script>
+	<style type="text/css">
+	.scene{
+		width: 1000px;
+		height: 100%;
+		background-image: url(images/bg1.jpg);
+		background-repeat:no-repeat;
+		position: absolute;
+		left: 50%;
+		margin-left: -500px;
+		top: 0;
+	}
+	.main{
+		width: 800px;
+		height: 100%;
+		float: left;
+		box-sizing:border-box;
+		position: relative;
+		overflow: hidden;
+		position: relative;
+	}
+	.mask{
+		width: 200px;
+		height: 100%;
+		float: left;
+		background-color: #000;
+		opacity: 0.5;
+	}
+	.control{
+		width: 200px;
+		height: 100%;
+		float: left;
+		padding-top: 100px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		box-sizing:border-box;
+	}
+	.show{
+		width: 150px;
+		height: 50px;
+		margin: 0px auto 10px;
+		border-radius: 15px;
+		text-align: center;
+		line-height: 50px;
+		font-size: 16px;
+		color: #fff;
+		background-size: 150px 50px;
+	}
+	.scor{
+		background-image: url(images/images/jishu_scor.png);
+	}
+	.state{
+		background-image: url(images/images/jishu_state.png);
+	}
+	.life{
+		background-image: url(images/images/jishu_life.png);
+	}
+	.btn{
+		width: 150px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		font-size: 18px;
+		color: #111;
+		margin: 20px auto;
+		cursor: pointer;
+		background-size: 150px 50px;
+		font-family: 方正少儿简体;
+		font-weight: bold;
+	}
+	.start{
+		background-image: url(images/images/anniu_start.png);
+	}
+	.stop{
+		background-image: url(images/images/anniu_stop.png);
+	}
+	.end{
+		background-image: url(images/images/anniu_end.png);
+	}
+	.name{
+		width: 100%;
+		color: #fff;
+		font-size: 18px;
+		margin-left: 80px;
+		font-family: 方正彩云简体;
+		font-weight: bold;
+	}
+	</style>
+</head>
+<body>
+	<div class="scene">
+		<div class="main"></div>
+		<div class="mask"></div>
+		<div class="control">
+			<span class="name">得分：</span>
+			<div class="scor show">0</div>
+			<span class="name">关卡：</span>
+			<div class="state show">1</div>
+			<span class="name">生命：</span>
+			<div class="life show">3</div>
+			<div class="start btn">开始</div>
+			<div class="stop btn">暂停</div>
+			<div class="end btn">结束</div>
+		</div>
+	</div>
+</body>
+</html>
